@@ -36,25 +36,69 @@
     <style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
     <link rel="stylesheet" href="/landing.css ">
     <link rel="stylesheet" href="/rsms.css">
+    <script src="https://kit.fontawesome.com/436c17474f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
     </head>
     <body class="font-sans antialiased bg-neutral-600 text-neutral-100" style="">
     <div wire:id="h3RJP3Ej4MnhhYJ86G81" class="flex-1">
     <div x-data="{ navOpen: false }" class="relative overflow-hidden bg-neutral-600 text-neutral-100">
     <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 lg:items-center lg:flex py-4 lg:py-6">
     <div class="w-full lg:grid lg:grid-cols-12 lg:gap-8">
-    <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28 xl:pb-32 lg:col-span-6">
+    <div class=" z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28 xl:pb-32 lg:col-span-6">
     <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start">
     <div class="flex items-center flex-grow flex-shrink-0 w-full md:w-auto lg:flex-grow-0">
     <div class="flex items-center justify-between w-full md:w-auto">
     <a href="https://interwebz-cheats.com" aria-label="Home">
-    <img class="w-auto h-8 sm:h-10" src="https://interwebz-cheats.com/img/logo.svg" alt="INTERWEBZ Logo">
+        <img class="w-auto h-8 sm:h-10" src="https://interwebz-cheats.com/img/logo.svg" alt="INTERWEBZ Logo">
     </a>
-    <div class="flex items-center -mr-2 md:hidden">
+    <!-- <button class="btn btn-primary"><i class="fa-solid fa-bars"></i></button> -->
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary d-block d-md-none fs-4" style="background: transparent; border: none; color: #907bb1;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style=" min-width: 97vw !important; margin-top: 8px;">
+      <div class="modal-content" style="background-color: #362A51; border: 1px solid rgb(85,66,112);">
+        <div class="modal-header" style="border: none;">
+            <a href="https://interwebz-cheats.com" aria-label="Home">
+                <img class="w-auto h-8 sm:h-10" src="https://interwebz-cheats.com/img/logo.svg" alt="INTERWEBZ Logo">
+            </a>
+            <button type="button" class="btn btn-secondary modal-btn fs-4" style="background: transparent; border: none; color: #907bb1;" data-bs-dismiss="modal">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body p-0" >
+          <ul class="list-modal p-2 m-0">
+            <li>
+                <a>Our Cheats</a>
+            </li>
+            <li>
+                <a>Community</a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer d-flex justify-content-center modal-btn" style="background: #2D2145; color: #907bb1; border-top: 1px solid rgb(85,66,112);">
+            <button class="fw-bolder" type="button">Sign in <i class="bi bi-arrow-right fs-4"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- <div class="flex items-center -mr-2 md:hidden">
     <button @click="navOpen = true" type="button" class="inline-flex items-center justify-center p-2 transition duration-150 ease-in-out rounded-md text-neutral-200 hover:text-neutral-100 hover:bg-neutral-400 focus:outline-none focus:bg-neutral-400 focus:text-neutral-100" id="main-menu" aria-label="Main menu" aria-haspopup="true">
     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
     </svg> </button>
-    </div>
+    </div> -->
     </div>
     </div>
     <div class="w-full">
@@ -186,7 +230,8 @@
     </div>
     </div>
     </nav>
-    <div class="absolute inset-x-0 top-0 z-50 -m-2 transition origin-top-right transform md:hidden" x-show="navOpen" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" style="display: none;">
+ 
+    <!-- <div class="absolute inset-x-0 top-0 z-50 -m-2 transition origin-top-right transform md:hidden" x-show="navOpen" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95" style="display: none;">
     <div class="rounded-lg shadow-md">
     <div class="overflow-hidden border rounded-md ring-1 ring-black ring-opacity-5 bg-neutral-500 border-neutral-350" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
     <div class="flex items-center justify-between px-5 pt-4">
@@ -220,7 +265,7 @@
     </div>
     </div>
     </div>
-    </div>
+    </div> -->
     <main>
     <div class="max-w-screen-xl mx-auto mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
     <div class="text-center lg:text-left">
@@ -1003,6 +1048,17 @@
     <script src="/js/landing.js?id=97a1a4b0ff47cbeb992e" defer="" type="text/javascript"></script>
     <script src="https://js.stripe.com/v3/" type="text/javascript"></script>
     <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;84b191a8aab47c3a&quot;,&quot;version&quot;:&quot;2024.1.0&quot;,&quot;token&quot;:&quot;6804e66e506340e3a1643802f2023a2c&quot;}" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Alpine.start(); // Initialize Alpine.js
+    
+            // Define your Alpine.js data
+            Alpine.data('yourComponent', () => ({
+                navOpen: false,
+            }));
+        });
+    </script>
     
     
-    <iframe name="__privateStripeMetricsController4070" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Finterwebz-cheats.com%2F&amp;title=INTERWEBZ%20-%20Undetected%20Cheats%20for%20CS%3AGO%2C%20GMOD%2C%20and%20More...&amp;referrer=https%3A%2F%2Finterwebz-cheats.com%2Fcommunity%2F&amp;muid=f902fc07-5ce9-4263-bd14-252252fef42cce6361&amp;sid=c99809cf-478f-4787-9725-ba1522cb5367a75229&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe></body></html>
+    <iframe name="__privateStripeMetricsController4070" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/m-outer-3437aaddcdf6922d623e172c2d6f9278.html#url=https%3A%2F%2Finterwebz-cheats.com%2F&amp;title=INTERWEBZ%20-%20Undetected%20Cheats%20for%20CS%3AGO%2C%20GMOD%2C%20and%20More...&amp;referrer=https%3A%2F%2Finterwebz-cheats.com%2Fcommunity%2F&amp;muid=f902fc07-5ce9-4263-bd14-252252fef42cce6361&amp;sid=c99809cf-478f-4787-9725-ba1522cb5367a75229&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>
+</body></html>
