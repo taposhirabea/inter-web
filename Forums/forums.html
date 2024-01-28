@@ -26,6 +26,7 @@
     <link href="/fonts.googleapis.com/css.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./styles/c.css" />
     <link rel="stylesheet" href="./styles/forum.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
     <script src="/community/js/xf/preamble.min.js?_v=d92e847c" type="40e90c3518bc483601b5614f-text/javascript"></script>
     <link rel="icon" type="image/png" href="https://interwebz-cheats.com/community/styles/interwebz/xenforo/xenforo-favicon.png" sizes="32x32" />
     <script class="js-klEditorTemplates" type="application/json">
@@ -43,50 +44,80 @@
     <div class="p-pageWrapper" id="top">
         <nav class="p-nav">
             <div class="p-nav-inner">
+
+                <nav class="navbar navbar-dark fixed-top d-md-none d-lg-none" style="background: transparent; width: 80px; display: contents;">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-start " style="background: #2A1F3D; width: 280px;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" style="color: #6E5C8A;" id="offcanvasDarkNavbarLabel">Menu</h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-0">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                            <li class="nav-item p-2">
+                              <a class="nav-link fs-6 active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item p-2 " style="background: #554270; border-radius: 4px;">
+                                  <a style="color: #ede2ff !important; " data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Forums <i class="bi bi-chevron-down ps-5"></i>
+                                  </a>
+                                
+                            </li>
+                            <div class="collapse show"  id="collapseExample">
+                                <ul class="card card-body p-1" style="background: transparent;">
+                                  <li><a>News</a></li>
+                                  <li><a>Find threads</a></li>
+                                </ul>
+                              </div>
+                            <li class="nav-item p-2">
+                                <a class="nav-link fs-6" href="#">Dashboard</a>
+                            </li>
+                            <li class="nav-item dropdown p-2">
+                              <a class="nav-link dropdown-toggle fs-6" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Knowledge base
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+
                 <a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
 <i aria-hidden="true"></i>
 <span class="p-nav-menuText">Menu</span>
 </a>
-                <div class="p-header-logo p-header-logo--image">
+                <div class="p-header-logo p-header-logo--image  d-none d-md-block">
                     <a href="">
 <img src="logo.svg" srcset alt="INTERWEBZ" width="35px" height="35px" />
 </a>
                 </div>
-                <div class="p-nav-smallLogo">
+                <!-- <div class="p-nav-smallLogo">
                     <a href="">
 <img src="logo.svg" srcset alt="INTERWEBZ" width="35px" height="35px" />
 </a>
-                </div>
-                <div class="p-nav-scroller hScroller" data-xf-init="h-scroller" data-auto-scroll=".p-navEl.is-selected">
+                </div> -->
+                <div class="p-nav-scroller hScroller d-none d-md-block" data-xf-init="h-scroller" data-auto-scroll=".p-navEl.is-selected">
                     <div class="hScroller-scroll">
                         <ul class="p-nav-list js-offCanvasNavSource">
                             <li>
                                 <div class="p-navEl ">
-                                    <a href="https://interwebz-cheats.com" class="p-navEl-link " data-xf-key="1" data-nav-id="home">Home</a>
+                                    <a href="../index.html" class="p-navEl-link " data-xf-key="1" data-nav-id="home">Home</a>
                                 </div>
                             </li>
-                            <li>
-                                <div class="p-navEl is-selected" data-has-children="true">
-                                    <a href="/community/" class="p-navEl-link p-navEl-link--splitMenu" style="color: #E8E0F5 !important; background: #554270 !important; border-radius: 4px;" data-nav-id="forums">Forums</a>
-                                    <a data-xf-key="2" data-xf-click="menu" data-menu-pos-ref="< .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true"></a>
-                                    <div class="menu menu--structural" data-menu="menu" aria-hidden="true">
-                                        <div class="menu-content">
-                                            <a href="/community/whats-new/posts/" class="menu-linkRow u-indentDepth0 js-offCanvasCopy " data-nav-id="newPosts">New posts</a>
-                                            <a href="/community/find-threads/started" class="menu-linkRow u-indentDepth0 js-offCanvasCopy " data-nav-id="findThreads">Find threads</a>
-                                            <a href="/community/find-threads/started" class="menu-linkRow u-indentDepth1 js-offCanvasCopy " data-nav-id="yourThreads">Your threads</a>
-                                            <a href="/community/find-threads/contributed" class="menu-linkRow u-indentDepth1 js-offCanvasCopy " data-nav-id="contributedThreads">Threads with your posts</a>
-                                            <a href="/community/find-threads/unanswered" class="menu-linkRow u-indentDepth1 js-offCanvasCopy " data-nav-id="unansweredThreads">Unanswered threads</a>
-                                            <hr class="menu-separator" />
-                                            <a href="/community/watched/threads" class="menu-linkRow u-indentDepth0 js-offCanvasCopy " data-nav-id="watched">Watched</a>
-                                            <a href="/community/watched/threads" class="menu-linkRow u-indentDepth1 js-offCanvasCopy " data-nav-id="watchedThreads">Watched threads</a>
-                                            <a href="/community/watched/forums" class="menu-linkRow u-indentDepth1 js-offCanvasCopy " data-nav-id="watchedForums">Watched forums</a>
-                                            <hr class="menu-separator" />
-                                            <a href="/community/search/?type=post" class="menu-linkRow u-indentDepth0 js-offCanvasCopy " data-nav-id="searchForums">Search forums</a>
-                                            <a href="/community/forums/-/mark-read?date=1706274979" class="menu-linkRow u-indentDepth0 js-offCanvasCopy " data-xf-click="overlay" data-nav-id="markForumsRead">Mark forums read</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            
                             <li>
                                 <div class="p-navEl ">
                                     <a href="/dashboard" class="p-navEl-link " data-xf-key="3" data-nav-id="dashboard">Dashboard</a>
@@ -95,7 +126,7 @@
                             <li>
                                 <div class="p-navEl " data-has-children="true">
                                     <a href="/community/knowledge-base/" class="p-navEl-link p-navEl-link--splitMenu " data-nav-id="nfKnowledgeBase">Knowledge base</a>
-                                    <a data-xf-key="4" data-xf-click="menu" data-menu-pos-ref="< .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true"></a>
+                                    <a data-xf-key="4" data-xf-click="menu" data-menu-pos-ref=" .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true"></a>
                                     <div class="menu menu--structural" data-menu="menu" aria-hidden="true">
                                         <div class="menu-content">
                                             <a href="/community/search/?type=nf_tickets_kb_article" class="menu-linkRow u-indentDepth0 js-offCanvasCopy " data-nav-id="nfTicketsKBSearch">Search articles</a>
@@ -125,13 +156,16 @@
                         </ul>
                     </div>
                 </div>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
                 <div class="p-nav-opposite">
                     <div class="p-navgroup p-account p-navgroup--member">
                         <a href="/community/account/" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--user badgeContainer" data-badge="0" data-xf-click="menu" data-xf-key="m" data-menu-pos-ref="< .p-navgroup" aria-expanded="false" aria-haspopup="true">
-<span class="avatar avatar--xxs avatar--default avatar--default--image" data-user-id="93264" title="toufiq">
+<span class="avatar avatar--xxs avatar--default avatar--default--image" data-user-id="93264" title="name">
 <span class="avatar-u93264-s"></span>
 </span>
-<span class="p-navgroup-linkText" style="color: #ebe2fa  !important;">toufiq</span>
+<span class="p-navgroup-linkText" style="color: #ebe2fa  !important;">name</span>
 </a>
                         <div class="menu menu--structural menu--wide menu--account" data-menu="menu" aria-hidden="true" data-href="/community/account/visitor-menu" data-load-target=".js-visitorMenuBody">
                             <div class="menu-content js-visitorMenuBody">
@@ -228,7 +262,7 @@
                 </div>
             </div>
         </nav>
-        <div class="p-sectionLinks">
+        <div class="p-sectionLinks d-none d-md-block">
             <div class="p-sectionLinks-inner hScroller" data-xf-init="h-scroller">
                 <div class="hScroller-scroll">
                     <ul class="p-sectionLinks-list">
@@ -286,10 +320,10 @@
                 <div class="p-offCanvasAccountLink">
                     <div class="offCanvasMenu-linkHolder">
                         <a href="/community/account/" class="offCanvasMenu-link">
-<span class="avatar avatar--xxs avatar--default avatar--default--image" data-user-id="93264" title="toufiq">
+<span class="avatar avatar--xxs avatar--default avatar--default--image" data-user-id="93264" title="name">
 <span class="avatar-u93264-s"></span>
 </span>
-toufiq
+name
 </a>
                     </div>
                     <hr class="offCanvasMenu-separator" />
@@ -301,7 +335,7 @@ toufiq
                 </div>
             </div>
         </div>
-        <div class="p-body">
+        <div class="p-body" style="background: #2D2145;">
             <!-- <div class="p-breadcrumbs--container">
                 <div class="p-breadcrumbs--container--inner">
                     <ul class="p-breadcrumbs " itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -318,7 +352,7 @@ toufiq
 
                 <noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript is disabled. For a better experience, please enable JavaScript in your browser before proceeding.</div></noscript>
                 <div class="blockMessage blockMessage--important blockMessage--iconic js-browserWarning" style="display: none">You are using an out of date browser. It may not display this or other websites correctly.<br/>You should upgrade or use an <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">alternative browser</a>.</div>
-                <div class="p-body-header">
+                <!-- <div class="p-body-header">
                     <div class="p-title ">
                         <h1 class="p-title-value">INTERWEBZ</h1>
                         <div class="p-title-pageAction">
@@ -330,19 +364,19 @@ Post thread…
 </span></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="p-body-main  ">
                     <div class="p-body-contentCol"></div>
                     <div class="p-body-content is-active">
-                        <div class="p-body-pageContent">
-                            <div class="block block--category block--category3">
-                                <span class="u-anchorTarget" id="public-area.3"></span>
-                                <div class="block-container">
-                                    <h2 class="block-header">
-                                        <div class="block-gradient-container">
+                        <div class="p-body-pageContent" >
+                            <div class="block block--category block--category3" >
+                                <!-- <span class="u-anchorTarget" id="public-area.3"></span> border-top: 4px solid red; border-top-right-radius: 6px; border-top-left-radius: 6px; -->
+                                <div class="block-container" style="background: #483663; border: 1px solid #6E5C8A; border-top: 5px solid #D16649; border-top-right-radius: 7px; border-top-left-radius: 7px; ">
+                                    <h2 class="block-header p-3 " style="background: #483663; border-bottom: 1px solid #6E5C8A;">
+                                        <!-- <div class="block-gradient-container">
                                             <div class="block-gradient"></div>
-                                        </div>
-                                        <a href="/community/#public-area.3">Public Area</a>
+                                        </div> -->
+                                        <a href="/community/#public-area.3" class="text-color underline">Public Area</a>
                                     </h2>
                                     <div class="block-body">
                                         <div class="node node--id65 node--depth2 node--link">
@@ -352,7 +386,7 @@ Post thread…
 </span>
                                                 <div class="node-main js-nodeMain">
                                                     <h3 class="node-title">
-                                                        <a href="/community/link-forums/dashboard-purchase-cheats.65/" data-xf-init data-shortcut="node-description">Dashboard - Purchase Cheats</a>
+                                                        <a class="text-color" href="/community/link-forums/dashboard-purchase-cheats.65/" data-xf-init data-shortcut="node-description">Dashboard - Purchase Cheats</a>
                                                     </h3>
                                                     <div class="node-description ">Access the panel to purchase cheats and manage your subscriptions.</div>
                                                 </div>
@@ -365,8 +399,8 @@ Post thread…
 </span>
                                                 <div class="node-main js-nodeMain">
                                                     <h3 class="node-title">
-                                                        <a href="/community/forums/announcements.64/" data-xf-init data-shortcut="node-description">Announcements</a>
-                                                        <span class="node--newIndicator">New</span>
+                                                        <a class="text-color" href="/community/forums/announcements.64/" data-xf-init data-shortcut="node-description">Announcements</a>
+                                                       
                                                     </h3>
                                                     <div class="node-description ">Check here for all the latest information!</div>
                                                     <div class="node-meta">
@@ -380,7 +414,7 @@ Post thread…
                                                 </div>
                                                 <div class="node-stats">
                                                     <dl class="pairs pairs--rows">
-                                                        <dd>18</dd>
+                                                        <dd class="text-color">18</dd>
                                                         <dt>Threads</dt>
                                                     </dl>
                                                 </div>
@@ -409,8 +443,8 @@ Post thread…
 </span>
                                                 <div class="node-main js-nodeMain">
                                                     <h3 class="node-title">
-                                                        <a href="/community/forums/sales-threads.76/" data-xf-init data-shortcut="node-description">Sales Threads</a>
-                                                        <span class="node--newIndicator">New</span>
+                                                        <a class="text-color" href="/community/forums/sales-threads.76/" data-xf-init data-shortcut="node-description">Sales Threads</a>
+                                                        
                                                     </h3>
                                                     <div class="node-description ">Not entirely convinced yet? Have a look here to see what we have to offer for each and every game.</div>
                                                     <div class="node-meta">
@@ -436,7 +470,7 @@ Members Only</a>
                                                 </div>
                                                 <div class="node-stats">
                                                     <dl class="pairs pairs--rows">
-                                                        <dd>8</dd>
+                                                        <dd class="text-color">8</dd>
                                                         <dt>Threads</dt>
                                                     </dl>
                                                 </div>
@@ -465,7 +499,7 @@ Members Only</a>
 </span>
                                                 <div class="node-main js-nodeMain">
                                                     <h3 class="node-title">
-                                                        <a href="/community/forums/pre-sales-support.57/" data-xf-init data-shortcut="node-description">Pre-Sales Support</a>
+                                                        <a class="text-color" href="/community/forums/pre-sales-support.57/" data-xf-init data-shortcut="node-description">Pre-Sales Support</a>
                                                         <span class="node--newIndicator">New</span>
                                                     </h3>
                                                     <div class="node-description ">Have a question you want answered before you buy? This is the place to ask it!</div>
@@ -480,7 +514,7 @@ Members Only</a>
                                                 </div>
                                                 <div class="node-stats">
                                                     <dl class="pairs pairs--rows">
-                                                        <dd>950</dd>
+                                                        <dd class="text-color">950</dd>
                                                         <dt>Threads</dt>
                                                     </dl>
                                                 </div>
@@ -509,7 +543,7 @@ Members Only</a>
 </span>
                                                 <div class="node-main js-nodeMain">
                                                     <h3 class="node-title">
-                                                        <a href="/community/forums/reviews.6/" data-xf-init data-shortcut="node-description">Reviews</a>
+                                                        <a class="text-color" href="/community/forums/reviews.6/" data-xf-init data-shortcut="node-description">Reviews</a>
                                                         <span class="node--newIndicator">New</span>
                                                     </h3>
                                                     <div class="node-description ">See what our customers have to say about us.</div>
@@ -524,7 +558,7 @@ Members Only</a>
                                                 </div>
                                                 <div class="node-stats">
                                                     <dl class="pairs pairs--rows">
-                                                        <dd>957</dd>
+                                                        <dd class="text-color">957</dd>
                                                         <dt>Threads</dt>
                                                     </dl>
                                                 </div>
@@ -553,7 +587,7 @@ Members Only</a>
 </span>
                                                 <div class="node-main js-nodeMain">
                                                     <h3 class="node-title">
-                                                        <a href="/community/forums/media.8/" data-xf-init data-shortcut="node-description">Media</a>
+                                                        <a class="text-color" href="/community/forums/media.8/" data-xf-init data-shortcut="node-description">Media</a>
                                                         <span class="node--newIndicator">New</span>
                                                     </h3>
                                                     <div class="node-description ">Any form of media showcasing our cheats can be posted here!</div>
@@ -587,7 +621,7 @@ Media Resources</a>
                                                 </div>
                                                 <div class="node-stats">
                                                     <dl class="pairs pairs--rows">
-                                                        <dd>3.9K</dd>
+                                                        <dd class="text-color">3.9K</dd>
                                                         <dt>Threads</dt>
                                                     </dl>
                                                 </div>
@@ -616,7 +650,7 @@ Media Resources</a>
 </span>
                                                 <div class="node-main js-nodeMain">
                                                     <h3 class="node-title">
-                                                        <a href="/community/forums/reseller.63/" data-xf-init data-shortcut="node-description">Reseller</a>
+                                                        <a class="text-color" href="/community/forums/reseller.63/" data-xf-init data-shortcut="node-description">Reseller</a>
                                                         <span class="node--newIndicator">New</span>
                                                     </h3>
                                                     <div class="node-description ">Do we not support your preferred payment method? Our trusted resellers are here to help you out.</div>
@@ -624,14 +658,14 @@ Media Resources</a>
                                                         <div class="node-statsMeta">
                                                             <dl class="pairs pairs--inline">
                                                                 <dt>Threads</dt>
-                                                                <dd>8</dd>
+                                                                <dd >8</dd>
                                                             </dl>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="node-stats">
                                                     <dl class="pairs pairs--rows">
-                                                        <dd>8</dd>
+                                                        <dd class="text-color">8</dd>
                                                         <dt>Threads</dt>
                                                     </dl>
                                                 </div>
@@ -657,12 +691,12 @@ Media Resources</a>
                                 </div>
                             </div>
                             <div class="block" data-widget-section="onlineNow" data-widget-id="6" data-widget-key="forum_overview_members_online" data-widget-definition="members_online">
-                                <div class="block-container">
-                                    <h3 class="block-minorHeader"><a href="/community/online/">Members online</a></h3>
-                                    <div class="block-body">
+                                <div class="block-container" style="border: 1px solid #6E5C8A;">
+                                    <h3 class="block-minorHeader p-3" style="background: #362A51;"><a class="text-color underline" href="/community/online/">Members online</a></h3>
+                                    <div class="block-body" style="background: #483663;">
                                         <div class="block-row block-row--minor">
                                             <ul class="listInline listInline--comma">
-                                                <li><a href="/community/members/toufiq.93264/" class="username " dir="auto" itemprop="name" data-user-id="93264" data-xf-init="member-tooltip"><span class="username--style2">toufiq</span></a></li>
+                                                <li><a href="/community/members/name.93264/" class="username " dir="auto" itemprop="name" data-user-id="93264" data-xf-init="member-tooltip"><span class="username--style2">name</span></a></li>
                                                 <li><a href="/community/members/admin.1/" class="username " dir="auto" itemprop="name" data-user-id="1" data-xf-init="member-tooltip"><span class="username--style3 username--staff username--moderator username--admin">admin</span></a></li>
                                                 <li><a href="/community/members/albashi_kizoku.93301/" class="username " dir="auto" itemprop="name" data-user-id="93301" data-xf-init="member-tooltip"><span class="username--style18">Albashi_Kizoku</span></a></li>
                                                 <li><a href="/community/members/wqkscb123456.70875/" class="username " dir="auto" itemprop="name" data-user-id="70875" data-xf-init="member-tooltip"><span class="username--style18">wqkscb123456</span></a></li>
@@ -1166,7 +1200,7 @@ Media Resources</a>
                                             <a href="/community/online/">... and 55 more.</a>
                                         </div>
                                     </div>
-                                    <div class="block-footer">
+                                    <div class="block-footer p-3" style="background: #362A51; color: #A08FBD;">
                                         <span class="block-footer-counter">Total:&nbsp;819 (members:&nbsp;555, guests:&nbsp;264)</span>
                                     </div>
                                 </div>
@@ -1184,7 +1218,7 @@ Media Resources</a>
                 </ul> -->
             </div>
         </div>
-        <footer class="p-footer" id="footer">
+        <footer class="p-footer" id="footer" style="background: #2D2145; border-top: 1px solid #524764;">
             <div class="p-footer-inner">
                 <div class="p-footer-row">
                     <div class="p-footer-row-main">
