@@ -42,17 +42,17 @@
 <i aria-hidden="true"></i>
 <span class="p-nav-menuText">Menu</span>
 </a>
-<div class="p-header-logo p-header-logo--image">
+<div class="p-header-logo p-header-logo--image d-none d-md-block ">
 <a href="">
 <img src="logo.svg" srcset alt="INTERWEBZ" width="35px" height="35px" />
 </a>
 </div>
-<div class="p-nav-smallLogo">
+<!-- <div class="p-nav-smallLogo d-none d-md-block d-lg-none">
 <a href="">
 <img src="logo.svg" srcset alt="INTERWEBZ"  width="35px" height="35px" />
 </a>
-</div>
-<div class="p-nav-scroller hScroller" data-xf-init="h-scroller" data-auto-scroll=".p-navEl.is-selected">
+</div> -->
+<div class="p-nav-scroller hScroller d-none d-md-block" data-xf-init="h-scroller" data-auto-scroll=".p-navEl.is-selected">
 <div class="hScroller-scroll">
 <ul class="p-nav-list js-offCanvasNavSource">
 <li>
@@ -75,8 +75,47 @@
 </ul>
 </div>
 </div>
+<nav class="navbar navbar-dark fixed-top d-md-none d-lg-none" style="background: transparent; width: 80px; display: contents;">
+	<div class="container-fluid">
+	  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="offcanvas offcanvas-start " style="background: #2A1F3D; width: 280px;" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+		<div class="offcanvas-header">
+		  <h5 class="offcanvas-title" style="color: #6E5C8A;" id="offcanvasDarkNavbarLabel">Menu</h5>
+		  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+		  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			<li class="nav-item">
+			  <a class="nav-link fs-6 active" aria-current="page" href="#">Log in</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link fs-6" href="#">Register</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link fs-6" href="#">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle fs-6" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Forums
+			  </a>
+			  <ul class="dropdown-menu dropdown-menu-dark">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li>
+				  <hr class="dropdown-divider">
+				</li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+  </nav>
 <div class="p-nav-opposite">
-<div class="p-navgroup p-account p-navgroup--guest">
+<div class="p-navgroup p-account p-navgroup--guest d-flex ">
 	
 <!-- <a href="/community/login/" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--logIn" data-xf-click="overlay" data-follow-redirects="on">
 <i aria-hidden="true"></i>
@@ -86,9 +125,9 @@
 <!-- Button trigger modal -->
 <!-- Button trigger modal -->
 
-<button type="button" class="btn btn-transparet "  data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-transparet d-flex align-items-center gap-1"  data-bs-toggle="modal" data-bs-target="#exampleModal">
 	<i class="bi bi-download modal-email"></i>
-	<span class="p-navgroup-linkText modal-email" >Log in</span>
+	<span class="p-navgroup-linkText modal-email d-none d-md-block " >Log in</span>
   </button>
   
   <!-- Modal -->
@@ -96,13 +135,13 @@
 	<div class="modal-dialog" >
 	  <div class="modal-content" style="border: 1px solid #6E5C8A;">
 		<div class="modal-header" style="border-bottom: 1px solid #6e5c8a">
-		  <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #e2ddea; font-size: 14px !important; padding: 5px;">Log in modal</h1>
+		  <h1 class="modal-title fs-5 " id="exampleModalLabel" style="color: #e2ddea; font-size: 14px !important; padding: 5px;">Log in</h1>
 		  <!-- <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button> -->
 		  <button type="button" class="btn btn-secondary fs-4" style="background: transparent; border: none; color: #907bb1;" data-bs-dismiss="modal">
 			<i class="fa-solid fa-xmark"></i>
 		  </button>
 		</div>
-		<div class="blocks block-container">
+		<div class="blocks block-container ml-0 mr-0">
 			<form action="/community/login/login" method="post" class="block">
 			<div class="block-container">
 			<div class="block-body" style="border: none !important;">
@@ -174,9 +213,12 @@
 	</div>
   </div>
 
-  <button type="button" class="btn btn-transparet ">
+  <button type="button" class="btn btn-transparet d-flex align-items-center gap-1">
 	<i class="fa-solid fa-user-plus modal-email"></i>
-	<span class="p-navgroup-linkText modal-email" >Register</span>
+	<span class="p-navgroup-linkText modal-email d-none d-md-block " >Register</span>
+  </button>
+  <button type="button" class="btn btn-transparet d-md-none d-lg-none" style="color: #907bb1;">
+	<i class="fa-solid fa-bolt-lightning"></i>
   </button>
 	
 <!-- <div class="menu menu--structural menu--medium" data-menu="menu" aria-hidden="true" data-href="/community/login/"></div> -->
@@ -188,7 +230,7 @@
 
 </div>
 <div class="p-navgroup p-discovery">
-<a href="/community/whats-new/" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" aria-label="What&#039;s new" title="What&#039;s new">
+<a href="/community/whats-new/" class="d-none p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" aria-label="What&#039;s new" title="What&#039;s new">
 <i aria-hidden="true"></i>
 <span class="p-navgroup-linkText">What's new</span>
 </a>
@@ -228,7 +270,7 @@
 </div>
 </div>
 </nav>
-<div class="p-sectionLinks">
+<div class="p-sectionLinks d-none d-md-block">
 <div class="p-sectionLinks-inner hScroller" data-xf-init="h-scroller">
 <div class="hScroller-scroll">
 <ul class="p-sectionLinks-list">

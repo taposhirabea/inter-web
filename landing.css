@@ -1,11 +1,15 @@
 .list-modal li  {
     padding: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.list-modal li a {
+    text-decoration: none !important;
     color: #b6a9c7;
-    font-weight: 500;
 }
 .list-modal li:hover {
 background: #483663;
-color: #d0d9e2;
+color: #d0d9e2 ;
 border-radius: 5px;
 }
 .modal-btn:hover {

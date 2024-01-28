@@ -14768,8 +14768,8 @@ img.u-imgContained{
 }
 @media (max-width:650px){
     .block-container,.blockMessage{
-        margin-left:-10px;
-        margin-right:-10px;
+        /* margin-left:-10px;
+        margin-right:-10px; */
         border-radius:0;
         border-left:none;
         border-right:none
