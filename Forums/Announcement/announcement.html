@@ -392,7 +392,7 @@ Watch
 </div></div>
 <div class="block-container">
 <div class="block-filterBar">
-<div class="filterBar">
+<!-- <div class="filterBar">
 <a class="filterBar-menuTrigger" data-xf-click="menu" role="button" tabindex="0" aria-expanded="false" aria-haspopup="true">Filters</a>
 <div class="menu menu--wide" data-menu="menu" aria-hidden="true" data-href="/community/forums/announcements.64/filters" data-load-target=".js-filterMenuBody">
 <div class="menu-content">
@@ -402,7 +402,17 @@ Watch
 </div>
 </div>
 </div>
-</div>
+</div> -->
+<div class="dropdown filterBar">
+    <button class="btn dropdown-toggle filterBar-menuTrigger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Filters
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
 </div>
 <div class="block-body">
 <div class="structItemContainer">
@@ -1185,13 +1195,10 @@ Watch
 </div>
 </div>
 </div>
-<div class="block-outer block-outer--after">
-<div class="block-outer-opposite"><a href="javascript:" class="showIgnoredLink is-hidden js-showIgnored" data-xf-init="tooltip" title="Show hidden content by {{names}}">Show ignored content</a></div>
-<div class="block-outer-opposite">
-<span class="button button--wrap is-disabled">
-You have insufficient privileges to post threads here.
-
-</span>
+<div class="block-outer block-outer--after" >
+<!-- <div class="block-outer-opposite"><a href="javascript:" class="showIgnoredLink is-hidden js-showIgnored" data-xf-init="tooltip" title="Show hidden content by {{names}}">Show ignored content</a></div> -->
+<div class="block-outer-opposite" >
+<span class="button button--wrap disabled" style="cursor: not-allowed;">You have insufficient privileges to post threads here.</span>
 </div>
 </div>
 </div>
