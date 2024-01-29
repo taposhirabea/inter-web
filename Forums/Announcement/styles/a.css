@@ -47,6 +47,10 @@ a{
     color: #a08fbd !important;
 
 }
+a:hover{
+    color:#E2DAF0 !important;
+    text-decoration:underline
+}
 abbr[title]{
     border-bottom:none;
     text-decoration:underline;
