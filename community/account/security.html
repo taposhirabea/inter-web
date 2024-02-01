@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Account details | INTERWEBZ</title>
+    <title>Security | INTERWEBZ</title>
     <link rel="manifest" href="/community/webmanifest.php">
     <meta name="theme-color" content="#e8e0f5" />
     <meta name="apple-mobile-web-app-title" content="INTERWEBZ">
@@ -17,7 +17,7 @@
     <link rel="preload" href="/community/styles/fonts/fa/fa-regular-400.woff2?_v=5.15.1" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="/community/styles/fonts/fa/fa-solid-900.woff2?_v=5.15.1" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="/community/styles/fonts/fa/fa-brands-400.woff2?_v=5.15.1" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./styles/a.css" />
+    <link rel="stylesheet" href="./styles/security.css" />
     <link href="//fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/community/css.php?css=public%3Aeditor.less%2Cpublic%3Akl_em_froala_fullscreen.less%2Cpublic%3Akl_em_froala_image.less%2Cpublic%3Akl_em_froala_special_characters.less%2Cpublic%3Aextra.less&amp;s=3&amp;l=1&amp;d=1701887046&amp;k=e788267058e6eb56c4d90ec6a5867a6fe4f6bc62"
     />
@@ -267,12 +267,12 @@
                         </li>
                         <li>
                             <div class="p-navEl ">
-                                <a href="/community/members/toufiq.93264/" class="p-navEl-link " data-xf-key="alt+3" data-nav-id="defaultYourProfile">Your profile</a>
+                                <a href="/Profile/profile.html" class="p-navEl-link " data-xf-key="alt+3" data-nav-id="defaultYourProfile">Your profile</a>
                             </div>
                         </li>
                         <li>
                             <div class="p-navEl ">
-                                <a href="/community/account/" class="p-navEl-link " data-xf-key="alt+4" data-nav-id="defaultYourAccount">Your account</a>
+                                <a href="/community/account/account-details.html" class="p-navEl-link " data-xf-key="alt+4" data-nav-id="defaultYourAccount">Your account</a>
                             </div>
                         </li>
                         <li>
@@ -334,7 +334,7 @@ toufiq
                 <div class="blockMessage blockMessage--important blockMessage--iconic js-browserWarning" style="display: none">You are using an out of date browser. It may not display this or other websites correctly.<br/>You should upgrade or use an <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">alternative browser</a>.</div>
                 <div class="p-body-header">
                     <div class="p-title ">
-                        <h1 class="p-title-value">Account details</h1>
+                        <h1 class="p-title-value">PASSWORD AND SECURITY</h1>
                     </div>
                 </div>
                 <div class="p-body-main  p-body-main--withSideNav">
@@ -367,10 +367,10 @@ Bookmarks
                                             </div>
                                             <h3 class="block-minorHeader">Settings</h3>
                                             <div class="block-body"  style="background: #483663;">
-                                                <a class="blockLink is-selected" href="/community/account/account-details">
+                                                <a class="blockLink " href="/community/account/account-details">
 Account details
 </a>
-                                                <a class="blockLink " href="/community/account/security">
+                                                <a class="blockLink is-selected" href="/community/account/security">
 Password and security
 </a>
                                                 <a class="blockLink " href="/community/account/privacy">
@@ -404,424 +404,122 @@ Ignoring
                     </div>
                     <div class="p-body-content is-active">
                         <div class="p-body-pageContent">
-                            <form action="/community/account/account-details" method="post" class="block" data-xf-init="ajax-submit" data-force-flash-message="true">
+                            <!-- block container -->
+                            <form action="/community/account/security" method="post" class="block" data-xf-init="ajax-submit" data-force-flash-message="true">
                                 <div class="block-container">
-                                    <div class="block-body username-body">
-                                        <dl class="formRow">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label">Username</label></div>
-</dt>
-                                            <dd>
-                                                toufiq
-                                            </dd>
-                                        </dl>
-                                        <dl class="formRow formRow--button">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label">Email</label></div>
-</dt>
-                                            <dd>
-                                                <span class="__cf_email__" data-cfemail="cabea5bfaca3bbafa6aba2b38aa2a5bea7aba3a6e4a9a5a7">[email protected]</span>
-                                                <a href="/community/account/email" class="p-2 rounded" style="border: 1px solid #6E5C8A;" data-xf-click="overlay"><span class="button-text">Change</span></a>
-                                            </dd>
-                                        </dl>
-                                        <dl class="formRow">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label">Email options</label></div>
-</dt>
-                                            <dd>
-                                                <ul class="inputChoices">
-                                                    <li class="inputChoices-choice"><label class="iconic"><input type="checkbox" name="option[receive_admin_email]" value="1" checked="checked" /><i aria-hidden="true"></i><span class="iconic-label">Receive news and update emails</span></label></li>
-                                                </ul>
-                                                <div class="formRow-explain">You may find additional email options under <a href="/community/account/preferences">Preferences</a>.</div>
-                                            </dd>
-                                        </dl>
-                                        <input type="hidden" name="enable_activity_summary_email" value="1" />
-                                        <dl class="formRow">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label">Avatar</label></div>
-</dt>
-                                            <dd>
-                                                <a href="/community/account/avatar" class="avatar avatar--m avatar--default avatar--default--image" data-user-id="93264" data-xf-click="overlay">
-<span class="avatar-u93264-m"></span>
-</a>
-                                                <div class="formRow-explain">Click the image to change your avatar.</div>
-                                            </dd>
-                                        </dl>
-                                        <dl class="formRow">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label">Profile banner</label></div>
-</dt>
-                                            <dd>
-                                                <div class="memberProfileBanner memberProfileBanner--small memberProfileBanner-u93264-l memberProfileBanner--empty fauxBlockLink" data-toggle-class data-hide-empty="true"><a href="/community/account/banner" class="fauxBlockLink-blockLink" data-xf-click="overlay"></a></div>
-                                                <a href="/community/account/banner" class="button--link button" data-xf-click="overlay"><span class="button-text">Edit profile banner</span></a>
-                                            </dd>
-                                        </dl>
-                                        <hr class="formRowSep" />
-                                        <dl class="formRow formRow--input">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label">Date of birth</label></div>
-</dt>
-                                            <dd>
-                                                <div class="inputGroup inputGroup--auto">
-                                                    <select name="dob_month" class="input">
-<option value="0" selected="selected">&nbsp;</option>
-<option value="1">January</option>
-<option value="2">February</option>
-<option value="3">March</option>
-<option value="4">April</option>
-<option value="5">May</option>
-<option value="6">June</option>
-<option value="7">July</option>
-<option value="8">August</option>
-<option value="9">September</option>
-<option value="10">October</option>
-<option value="11">November</option>
-<option value="12">December</option>
-</select>
-                                                    <span class="inputGroup-splitter"></span>
-                                                    <input type="text" class="input" name="dob_day" pattern="\d*" size="4" maxlength="2" placeholder="Day" />
-                                                    <span class="inputGroup-splitter"></span>
-                                                    <input type="text" class="input" name="dob_year" pattern="\d*" size="6" maxlength="4" placeholder="Year" />
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl class="formRow">
-                                            <dt>
-<div class="formRow-labelWrapper"></div>
-</dt>
-                                            <dd>
-                                                <ul class="inputChoices">
-                                                    <li class="inputChoices-choice"><label class="iconic"><input type="checkbox" name="option[show_dob_date]" value="1" checked="1" data-xf-init="disabler" /><i aria-hidden="true"></i><span class="iconic-label">Show day and month of birth</span></label>
-                                                        <ul class="inputChoices-dependencies">
-                                                            <li class="inputChoices-option">
-                                                                <ul class="inputChoices">
-                                                                    <li class="inputChoices-choice"><label class="iconic"><input type="checkbox" name="option[show_dob_year]" value="1" checked="1" /><i aria-hidden="true"></i><span class="iconic-label">Show year of birth</span></label>
-                                                                        <dfn class="inputChoices-explain" style="color: #9b8ab6;">This will allow people to see your age.</dfn></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </dd>
-                                        </dl>
-                                        <hr class="formRowSep" />
-                                        <dl class="formRow formRow--input">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label" for="_xfUid-1-1706610609">Location</label></div>
-</dt>
-                                            <dd>
-                                                <input type="text" class="input" name="profile[location]" maxlength="50" id="_xfUid-1-1706610609" />
-                                            </dd>
-                                        </dl>
-                                        <dl class="formRow formRow--input">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label" for="_xfUid-2-1706610609">Website</label></div>
-</dt>
-                                            <dd>
-                                                <input type="url" class="input" name="profile[website]" id="_xfUid-2-1706610609" />
-                                            </dd>
-                                        </dl>
-                                        <hr class="formRowSep" />
-                                        <dl class="formRow formRow--input">
-                                            <dt>
-<div class="formRow-labelWrapper">
-<label class="formRow-label" for="_xfUid-3-1706610609">About you</label></div>
-</dt>
-<dd><textarea class="form-control" style="background: #483663; border-color: #6E5C8A;" id="exampleFormControlTextarea1" rows="3"></textarea></dd>
-                                            <!-- <dd>
-                                                <script data-cfasync="false" src="./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                                                <script class="js-editorToolbars" type="application/json">
-                                                    {
-                                                        "toolbarButtons": {
-                                                            "moreText": {
-                                                                "buttons": ["clearFormatting", "bold", "italic", "underline", "formatUL", "formatOL", "fontSize", "strikeThrough", "xfInlineCode", "xfInlineSpoiler"],
-                                                                "buttonsVisible": "6",
-                                                                "align": "left"
-                                                            },
-                                                            "moreParagraph": {
-                                                                "buttons": ["xfList", "align", "paragraphFormat"],
-                                                                "buttonsVisible": "3",
-                                                                "align": "left"
-                                                            },
-                                                            "moreRich": {
-                                                                "buttons": ["insertLink", "insertImage", "xfSmilie", "xfMedia", "xfQuote", "insertHR", "xfSpoiler", "xfCode"],
-                                                                "buttonsVisible": "6",
-                                                                "align": "left"
-                                                            },
-                                                            "moreMisc": {
-                                                                "buttons": ["undo", "redo", "xfBbCode", "xfDraft"],
-                                                                "buttonsVisible": "5",
-                                                                "align": "right"
-                                                            }
-                                                        },
-                                                        "toolbarButtonsMD": {
-                                                            "moreText": {
-                                                                "buttons": ["bold", "italic", "underline", "fontSize", "strikeThrough", "xfInlineCode", "xfInlineSpoiler"],
-                                                                "buttonsVisible": "3",
-                                                                "align": "left"
-                                                            },
-                                                            "moreParagraph": {
-                                                                "buttons": ["xfList", "align", "paragraphFormat", "formatOL", "formatUL"],
-                                                                "buttonsVisible": "3",
-                                                                "align": "left"
-                                                            },
-                                                            "moreRich": {
-                                                                "buttons": ["insertLink", "insertImage", "xfSmilie", "xfMedia", "xfQuote", "insertHR", "xfSpoiler", "xfCode"],
-                                                                "buttonsVisible": "2",
-                                                                "align": "left"
-                                                            },
-                                                            "moreMisc": {
-                                                                "buttons": ["undo", "redo", "clearFormatting", "xfBbCode", "xfDraft"],
-                                                                "buttonsVisible": "1",
-                                                                "align": "right"
-                                                            }
-                                                        },
-                                                        "toolbarButtonsSM": {
-                                                            "moreText": {
-                                                                "buttons": ["bold", "italic", "fontSize", "strikeThrough", "underline", "xfInlineCode", "xfInlineSpoiler"],
-                                                                "buttonsVisible": "2",
-                                                                "align": "left"
-                                                            },
-                                                            "moreParagraph": {
-                                                                "buttons": ["xfList", "align", "paragraphFormat"],
-                                                                "buttonsVisible": "1",
-                                                                "align": "left"
-                                                            },
-                                                            "moreRich": {
-                                                                "buttons": ["insertLink", "insertImage", "xfSmilie", "xfQuote", "xfMedia", "insertHR", "xfSpoiler", "xfCode"],
-                                                                "buttonsVisible": "3",
-                                                                "align": "left"
-                                                            },
-                                                            "moreMisc": {
-                                                                "buttons": ["undo", "redo", "xfBbCode", "clearFormatting", "xfDraft"],
-                                                                "buttonsVisible": "1",
-                                                                "align": "right"
-                                                            }
-                                                        },
-                                                        "toolbarButtonsXS": {
-                                                            "moreText": {
-                                                                "buttons": ["bold", "italic", "fontSize", "xfList", "align", "paragraphFormat", "strikeThrough", "underline", "xfInlineSpoiler", "xfInlineCode"],
-                                                                "buttonsVisible": "2",
-                                                                "align": "left"
-                                                            },
-                                                            "moreParagraph": {
-                                                                "buttons": [],
-                                                                "buttonsVisible": "0",
-                                                                "align": "left"
-                                                            },
-                                                            "moreRich": {
-                                                                "buttons": ["insertLink", "insertImage", "xfSmilie", "xfQuote", "xfMedia", "insertHR", "xfSpoiler", "xfCode"],
-                                                                "buttonsVisible": "2",
-                                                                "align": "left"
-                                                            },
-                                                            "moreMisc": {
-                                                                "buttons": ["undo", "redo", "xfBbCode", "clearFormatting", "xfDraft"],
-                                                                "buttonsVisible": "1",
-                                                                "align": "right"
-                                                            }
-                                                        }
-                                                    }
-                                                </script>
-                                                <script class="js-editorToolbarSizes" type="application/json">
-                                                    {
-                                                        "SM": 420,
-                                                        "MD": 575,
-                                                        "LG": 900
-                                                    }
-                                                </script>
-                                                <script class="js-editorDropdowns" type="application/json">
-                                                    []
-                                                </script>
-                                                <script class="js-klEditorConfig" type="application/json">
-                                                    {
-                                                        "pluginsEnabled": ["align", "bbCode", "contentPreview", "draggable", "file", "fontSize", "fullscreen", "image", "link", "lists", "specialCharacters", "table", "unlinkAll", "xfInsertGif", "xfSmilie"],
-                                                        "initOnClick": false,
-                                                        "keepFormatOnDelete": false,
-                                                        "pastePlain": false,
-                                                        "fontFamily": {
-                                                            "'Arial'": "Arial",
-                                                            "'Book Antiqua'": "Book Antiqua",
-                                                            "'Courier New'": "Courier New",
-                                                            "'Georgia'": "Georgia",
-                                                            "Tahoma": "Tahoma",
-                                                            "'Times New Roman'": "Times New Roman",
-                                                            "'Trebuchet MS'": "Trebuchet MS",
-                                                            "'Verdana'": "Verdana"
-                                                        },
-                                                        "fontSize": ["9", "10", "12", "15", "18", "22", "26"],
-                                                        "colorsText": ["#61BD6D", "#1ABC9C", "#54ACD2", "#2C82C9", "#9365B8", "#475577", "#CCCCCC", "#41A85F", "#00A885", "#3D8EB9", "#2969B0", "#553982", "#28324E", "#000000", "#F7DA64", "#FBA026", "#EB6B56", "#E25041", "#A38F84", "#EFEFEF", "#FFFFFF", "#FAC51C", "#F37934", "#D14841", "#B8312F", "#7C706B", "#D1D5D8", "REMOVE"],
-                                                        "colorsBackground": ["#61BD6D", "#1ABC9C", "#54ACD2", "#2C82C9", "#9365B8", "#475577", "#CCCCCC", "#41A85F", "#00A885", "#3D8EB9", "#2969B0", "#553982", "#28324E", "#000000", "#F7DA64", "#FBA026", "#EB6B56", "#E25041", "#A38F84", "#EFEFEF", "#FFFFFF", "#FAC51C", "#F37934", "#D14841", "#B8312F", "#7C706B", "#D1D5D8", "REMOVE"],
-                                                        "colorsHEXInput": false,
-                                                        "colorsStep": 7,
-                                                        "charCounterCount": false,
-                                                        "charCounterMode": "none",
-                                                        "tableStyles": {
-                                                            "noborder": "No border",
-                                                            "nobackground": "No background",
-                                                            "collapse": "Collapse",
-                                                            "alternate": "Alternate rows",
-                                                            "centered": "Centered",
-                                                            "right": "Right aligned"
-                                                        },
-                                                        "tableEditButtons": ["tableHeader", "tableRemove", "|", "tableRows", "tableColumns", "tableStyle"]
-                                                    }
-                                                </script>
-                                                <script class="js-specialCharacters" type="text/template">
-                                                    <div class="menu menu--specialChars" data-menu="menu" aria-hidden="true" data-href="/community/editor/kl-em-special-chars" data-load-target=".js-specialCharsMenuBody">
-                                                        <div class="menu-content">
-                                                            <div class="js-specialCharsMenuBody">
-                                                                <div class="menu-row">Loading…</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </script>
-                                                <script class="js-editorLanguage" type="application/json">
-                                                    {
-                                                        "Align Center": "Align center",
-                                                        "Align Left": "Align left",
-                                                        "Align Right": "Align right",
-                                                        "Align Justify": "Justify text",
-                                                        "Align": "Alignment",
-                                                        "Alignment": "Alignment",
-                                                        "Back": "Back",
-                                                        "Bold": "Bold",
-                                                        "By URL": "By URL",
-                                                        "Clear Formatting": "Remove formatting",
-                                                        "Code": "Code",
-                                                        "Text Color": "Text color",
-                                                        "Decrease Indent": "Outdent",
-                                                        "Delete Draft": "Delete draft",
-                                                        "Drafts": "Drafts",
-                                                        "Drop image": "Drop image",
-                                                        "Drop video": "Drop video",
-                                                        "Edit Link": "Edit link",
-                                                        "Font Family": "Font family",
-                                                        "Font Size": "Font size",
-                                                        "Normal": "Normal",
-                                                        "Heading 1": "Heading 1",
-                                                        "Heading 2": "Heading 2",
-                                                        "Heading 3": "Heading 3",
-                                                        "Increase Indent": "Indent",
-                                                        "Inline Code": "Inline code",
-                                                        "Insert GIF": "Insert GIF",
-                                                        "Insert Horizontal Line": "Insert horizontal line",
-                                                        "Inline Spoiler": "Inline spoiler",
-                                                        "Insert Image": "Insert image",
-                                                        "Insert Link": "Insert link",
-                                                        "Insert": "Insert",
-                                                        "Italic": "Italic",
-                                                        "List": "List",
-                                                        "Loading image": "Loading image",
-                                                        "Media": "Media",
-                                                        "More Text": "More options…",
-                                                        "More Paragraph": "More options…",
-                                                        "More Rich": "More options…",
-                                                        "More Misc": "More options…",
-                                                        "Open Link": "Open link",
-                                                        "or click": "Or click here",
-                                                        "Ordered List": "Ordered list",
-                                                        "Paragraph Format": "Paragraph format",
-                                                        "Preview": "Preview",
-                                                        "Quote": "Quote",
-                                                        "Redo": "Redo",
-                                                        "Remove": "Remove",
-                                                        "Replace": "Replace",
-                                                        "Save Draft": "Save draft",
-                                                        "Smilies": "Smilies",
-                                                        "Something went wrong. Please try again.": "Something went wrong. Please try again or contact the administrator.",
-                                                        "Spoiler": "Spoiler",
-                                                        "Strikethrough": "Strike-through",
-                                                        "Text": "Text",
-                                                        "Toggle BB Code": "Toggle BB code",
-                                                        "Underline": "Underline",
-                                                        "Undo": "Undo",
-                                                        "Unlink": "Unlink",
-                                                        "Unordered List": "Unordered list",
-                                                        "Update": "Update",
-                                                        "Upload Image": "Upload image",
-                                                        "Uploading": "Uploading",
-                                                        "URL": "URL",
-                                                        "Insert Table": "Insert table",
-                                                        "Table Header": "Table header",
-                                                        "Remove Table": "Remove table",
-                                                        "Row": "Row",
-                                                        "Column": "Column",
-                                                        "Insert row above": "Insert row above",
-                                                        "Insert row below": "Insert row below",
-                                                        "Delete row": "Delete row",
-                                                        "Insert column before": "Insert column before",
-                                                        "Insert column after": "Insert column after",
-                                                        "Delete column": "Delete column",
-                                                        "Ctrl": "Ctrl",
-                                                        "Shift": "Shift",
-                                                        "Alt": "Alt",
-                                                        "Insert Video": "Insert video",
-                                                        "Upload Video": "Upload video",
-                                                        "Width": "Width",
-                                                        "Height": "Height",
-                                                        "Change Size": "Change size",
-                                                        "None": "None",
-                                                        "Alternative Text": "Alt text",
-                                                        "Templates": "Templates",
-
-                                                        "Hide Reply": "Hide until replied",
-                                                        "Hide Posts": "Hide until number of posts",
-                                                        "Hide Thanks": "Hide until reacted",
-                                                        "Hide Reply Thanks": "Hide until replied or reacted",
-                                                        "Hide Members": "Hide to guests",
-                                                        "Hide Date": "Hide until date",
-                                                        "Hide Group": "Hide unless in group",
-                                                        "Hide": "Hide",
-
-                                                        "HTML": "HTML",
-
-                                                        "Google Font": "Google font",
-                                                        "unlink all links": "Remove all links",
-                                                        "__lang end__": ""
-                                                    }
-                                                </script>
-                                                <script class="js-editorCustom" type="application/json">
-                                                    []
-                                                </script>
-                                                <script class="js-xfEditorMenu" type="text/template">
-                                                    <div class="menu" data-menu="menu" aria-hidden="true" data-href="{{href}}" data-load-target=".js-xfEditorMenuBody">
-                                                        <div class="menu-content">
-                                                            <div class="js-xfEditorMenuBody">
-                                                                <div class="menu-row">Loading…</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </script>
-                                                <textarea name="about_html" class="input js-editor u-jsOnly" data-xf-init="editor" data-original-name="about" data-buttons-remove="xfInsertGif" style="visibility: hidden; height: 287px; " aria-label="Rich text box" id="_xfUid-3-1706610609" data-preview="false"
-                                                    data-min-height="250"></textarea>
-                                                <input type="hidden" value data-bb-code="about" />
-                                                <noscript>
-		<textarea name="about" class="input" aria-label="Rich text box"></textarea>
-	</noscript>
-                                            </dd> -->
-                                        </dl>
+                                <div class="block-body">
+                                <dl class="formRow formRow--button">
+                                <dt>
+                                <div class="formRow-labelWrapper">
+                                <label class="formRow-label">Two-step verification</label></div>
+                                </dt>
+                                <dd>
+                                Disabled
+                                <a href="/community/account/two-step/" class="button--link button"><span class="button-text">Change</span></a>
+                                </dd>
+                                </dl>
+                                <hr class="formRowSep" />
+                                <dl class="formRow formRow--input">
+                                <dt>
+                                <div class="formRow-labelWrapper">
+                                <label class="formRow-label" for="_xfUid-1-1706763424">Your existing password</label></div>
+                                </dt>
+                                <dd>
+                                <div data-xf-init="password-hide-show" data-show-text="Show" data-hide-text="Hide">
+                                    <div class="inputGroup inputGroup--joined">
+                                        <input type="password" name="old_password" value class="input js-password input--passwordHideShow" autocomplete="current-password" autofocus="autofocus" id="_xfUid-1-1706763424" />
+                                        <div class="inputGroup-text">
+                                            <label class="iconic iconic--hideShow js-hideShowContainer" onclick="togglePasswordVisibility()">
+                                                <i class="fa-regular fa-eye eye-btn"></i>
+                                                <span class="iconic-label">Show</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <dl class="formRow formSubmitRow formSubmitRow--sticky" data-xf-init="form-submit-row">
-                                        <dt></dt>
-                                        <dd>
-                                            <div class="formSubmitRow-main">
-                                                <div class="formSubmitRow-bar"></div>
-                                                <div class="formSubmitRow-controls "><button type="submit" class="button--primary button button--icon">
-                                                    <span class="button-text"><i class="fa-regular fa-floppy-disk px-1"></i>Save</span></button></div>
-                                            </div>
-                                        </dd>
-                                    </dl>
                                 </div>
-                                <input type="hidden" name="_xfToken" value="1706610609,b8cf4adc8f25f42cd5c5bf366c5b3409" />
-                            </form>
+                                <div class="formRow-explain">For security reasons, you must verify your existing password before you may set a new password.</div>
+                                </dd>
+                                </dl>
+                                <dl class="formRow formRow--input">
+                                <dt>
+                                <div class="formRow-labelWrapper">
+                                <label class="formRow-label" for="_xfUid-2-1706763424">New password</label></div>
+                                </dt>
+                                <dd>
+                                <div data-xf-init="password-strength password-hide-show" data-show-text="Show" data-hide-text="Hide">
+                                    <div data-xf-init="password-hide-show" data-show-text="Show" data-hide-text="Hide">
+                                        <div class="inputGroup inputGroup--joined">
+                                            <input type="password" name="old_password" value class="input js2-password input--passwordHideShow" autocomplete="current-password" autofocus="autofocus" id="_xfUid-1-1706763424" />
+                                            <div class="inputGroup-text">
+                                                <label class="iconic iconic--hideShow js-hideShowContainer" onclick="togglePasswordVisibility2()">
+                                                    <i class="fa-regular fa-eye eye-btn"></i>
+                                                    <span class="iconic-label">Show</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <meter min="0" max="100" class="meterBar js-strengthMeter" low="40" high="80" optimum="100"></meter>
+                                <span class="js-strengthText meterBarLabel">Entering a password is required.</span>
+                                <script class="js-zxcvbnLanguage" type="application/json">
+                                            {
+                                                "Straight rows of keys are easy to guess": "Straight rows of keys are easy to guess.",
+                                                "Short keyboard patterns are easy to guess": "Short keyboard patterns are easy to guess.",
+                                                "Repeats like \"aaa\" are easy to guess": "Repeated characters such as \"aaa\" are easy to guess.",
+                                                "Repeats like \"abcabcabc\" are only slightly harder to guess than \"abc\"": "Repeated characters such as \"abcabcabc\" are only slightly more difficult to guess than \"abc\".",
+                                                "Avoid repeated words and characters": "Avoid repeated words and characters.",
+                                                "Sequences like abc or 6543 are easy to guess": "Sequences like \"abc\" or \"6543\" are easy to guess.",
+                                                "Recent years are easy to guess": "Recent years are easy to guess.",
+                                                "Dates are often easy to guess": "Dates are often easy to guess.",
+                                                "This is a top-10 common password": "This password appears in the Top 10 most common passwords list.",
+                                                "This is a top-100 common password": "This password appears in the Top 100 most common passwords list.",
+                                                "This is a very common password": "This password is a very common password.",
+                                                "This is similar to a commonly used password": "This password is similar to a commonly used password.",
+                                                "A word by itself is easy to guess": "A word by itself is easy to guess.",
+                                                "Names and surnames by themselves are easy to guess": "Names and surnames by themselves are easy to guess.",
+                                                "Common names and surnames are easy to guess": "Common names and surnames are easy to guess.",
+                                
+                                                "The chosen password could be stronger": "The chosen password could be stronger.",
+                                                "Entering a password is required": "Entering a password is required.",
+                                                "This is a very strong password": "This is a very strong password.",
+                                                "This is a reasonably strong password": "This is a reasonably strong password."
+                                            }
+                                        </script>
+                                </div>
+                                </dd>
+                                </dl>
+                                <dl class="formRow formRow--input">
+                                <dt>
+                                <div class="formRow-labelWrapper">
+                                <label class="formRow-label" for="_xfUid-3-1706763424">Confirm new password</label></div>
+                                </dt>
+                                <dd>
+                                    <div data-xf-init="password-hide-show" data-show-text="Show" data-hide-text="Hide">
+                                        <div class="inputGroup inputGroup--joined">
+                                            <input type="password" name="old_password" value class="input js3-password input--passwordHideShow" autocomplete="current-password" autofocus="autofocus" id="_xfUid-1-1706763424" />
+                                            <div class="inputGroup-text">
+                                                <label class="iconic iconic--hideShow js-hideShowContainer" onclick="togglePasswordVisibility3()">
+                                                    <i class="fa-regular fa-eye eye-btn"></i>
+                                                    <span class="iconic-label">Show</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                                </dl>
+                                </div>
+                                <dl class="formRow formSubmitRow">
+                                <dt></dt>
+                                <dd>
+                                <div class="formSubmitRow-main">
+                                <div class="formSubmitRow-bar"></div>
+                                <div class="formSubmitRow-controls"><button type="submit" class="button--primary button button--icon ">
+                                    <span class="button-text"><i class="fa-regular fa-floppy-disk px-1"></i> Save</span></button></div>
+                                </div>
+                                </dd>
+                                </dl>
+                                </div>
+                                <input type="hidden" name="_xfRedirect" value="https://interwebz-cheats.com/community/account/security" />
+                                <input type="hidden" name="_xfToken" value="1706763424,a7dae61663bf5548627cd99811066c1d" />
+                                </form>
                         </div>
                     </div>
                 </div>
@@ -1032,6 +730,26 @@ Ignoring
 
             </div>
         </div>
+    </script>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.querySelector('.js-password');
+    
+            // Toggle the type attribute between 'text' and 'password'
+            passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+        }
+        function togglePasswordVisibility2() {
+            var passwordField = document.querySelector('.js2-password');
+    
+            // Toggle the type attribute between 'text' and 'password'
+            passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+        }
+        function togglePasswordVisibility3() {
+            var passwordField = document.querySelector('.js3-password');
+    
+            // Toggle the type attribute between 'text' and 'password'
+            passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+        }
     </script>
     <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="78b77f39506b02cd23924c81-|49" defer></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"84d909b75e33bc25","version":"2024.1.0","token":"6804e66e506340e3a1643802f2023a2c"}'
