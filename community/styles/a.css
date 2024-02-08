@@ -18240,6 +18240,13 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
 .overlay-content:after{
     clear:both
 }
+.input-email {
+    background: #554270;
+    border-color: #6E5C8A;
+}
+.verification-link:hover{
+    border: 1px solid #333333 !important;
+}
 body.is-modalOpen{
     overflow:hidden !important
 }
