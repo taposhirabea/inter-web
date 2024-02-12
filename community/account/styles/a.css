@@ -16076,12 +16076,8 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
     border-left:none
 }
 .inputGroup.inputGroup--joined .inputGroup-text{
-    border:1px solid #d8d8d8;
-    border-top-color:var(--input-border-heavy);
-    border-right-color:var(--input-border-light);
-    border-bottom-color:var(--input-border-light);
-    border-left-color:var(--input-border-heavy);
-    background:#f7fbfe;
+    border: 1px solid #7d699b !important;
+    background:#554270;
     text-align:center;
     padding:3px 6px
 }
@@ -22711,4 +22707,17 @@ a.reaction:hover .reaction-text,a.reaction:focus .reaction-text{
 .username-body dl dt{
     background-color: #362A51 !important;
     font-weight: 400 !important;
+}
+.close-btn {
+    background: transparent;
+    color: #a5a2a9 ;
+    font-size: 23px;
+    border: none;
+}
+.close-btn:hover {
+    color: #e8e0f5;
+}
+
+.modal-header {
+    border-bottom: 1px solid #7d699b !important;
 }
