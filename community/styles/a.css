@@ -18435,7 +18435,10 @@ body.is-modalOpen .overlay-container,body.is-modalOpen .offCanvasMenu{
     align-items:center;
     border-radius:50%;
     vertical-align:top;
-    overflow:hidden
+    overflow:hidden;
+    border: 1px solid #6e5c8a;
+    border-radius: 6px;
+
 }
 .avatar img{
     background-color:#fefefe
@@ -18460,7 +18463,7 @@ body.is-modalOpen .overlay-container,body.is-modalOpen .offCanvasMenu{
 }
 .avatar.avatar--default.avatar--default--image{
     background-color:#fefefe;
-    background-image:url();
+    background-image:url(./interwebz/xenforo/default-avatar.jpg);
     background-size:cover
 }
 .avatar.avatar--default.avatar--default--image>span{
@@ -21652,6 +21655,9 @@ a.reaction:hover .reaction-text,a.reaction:focus .reaction-text{
     text-decoration:none;
     background:rgba(7,7,7,0.15)
 }
+.text-color{
+    color: #E8E0E7 !important;
+}
 .p-navgroup-link.p-navgroup-link--user{
     overflow:hidden;
     white-space:nowrap;
@@ -21660,8 +21666,8 @@ a.reaction:hover .reaction-text,a.reaction:focus .reaction-text{
     max-width:150px
 }
 .p-navgroup-link.p-navgroup-link--user .avatar{
-    width:21px;
-    height:21px;
+    width:32px;
+    height:32px;
     font-size:13px
 }
 .p-navgroup-link.badgeContainer{

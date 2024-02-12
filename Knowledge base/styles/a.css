@@ -18435,7 +18435,7 @@ body.is-modalOpen .overlay-container,body.is-modalOpen .offCanvasMenu{
 }
 .avatar.avatar--default.avatar--default--image{
     background-color:#fefefe;
-    background-image:url("https://interwebz-cheats.com/community/styles/interwebz/xenforo/default-avatar.jpg");
+    background-image:url("./interwebz/xenforo/default-avatar.jpg");
     background-size:cover;
     border: 1px solid #DBD2E3;
 }

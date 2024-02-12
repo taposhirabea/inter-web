@@ -32,12 +32,15 @@
         []
     </script>
     
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
     <script src="https://kit.fontawesome.com/436c17474f.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body data-template="nf_tickets_member_view">
@@ -159,7 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="/community/conversations/" class="p-navgroup-link js-badge--conversations badgeContainer" data-badge="0" data-xf-click="menu" data-xf-key="," data-menu-pos-ref=" .p-navgroup" aria-label="Inbox"
+                        <a href="/Error/error.html" class="p-navgroup-link js-badge--conversations badgeContainer" data-badge="0" data-xf-click="menu" data-xf-key="," data-menu-pos-ref=" .p-navgroup" aria-label="Inbox"
                             aria-expanded="false" aria-haspopup="true">
         <!-- <i aria-hidden="true"></i> -->
         <i class="fa-regular fa-envelope text-color" ></i>
@@ -174,14 +177,14 @@
                                 <div class="menu-footer menu-footer--split">
                                     <div class="menu-footer-main">
                                         <ul class="listInline listInline--bullet">
-                                            <li><a href="/community/conversations/">Show all</a></li>
-                                            <li><a href="/community/conversations/add">Start a new conversation</a></li>
+                                            <li><a href="/Error/error.html">Show all</a></li>
+                                            <li><a href="/Error/error.html">Start a new conversation</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="/community/account/alerts" class="p-navgroup-link p-navgroup-link--iconic js-badge--alerts badgeContainer" data-badge="0" data-xf-click="menu" data-xf-key="." data-menu-pos-ref="< .p-navgroup" aria-label="Alerts" aria-expanded="false"
+                        <a href="/Error/error.html" class="p-navgroup-link p-navgroup-link--iconic js-badge--alerts badgeContainer" data-badge="0" data-xf-click="menu" data-xf-key="." data-menu-pos-ref="< .p-navgroup" aria-label="Alerts" aria-expanded="false"
                             aria-haspopup="true">
         <i aria-hidden="true"></i>
         <i class="fa-regular fa-bell text-color" ></i>
@@ -201,9 +204,9 @@
                                 <div class="menu-footer menu-footer--split">
                                     <div class="menu-footer-main">
                                         <ul class="listInline listInline--bullet">
-                                            <li><a href="/community/account/alerts">Show all</a></li>
-                                            <li><a href="/community/account/alerts/mark-read" class="js-alertsMarkRead">Mark read</a></li>
-                                            <li><a href="/community/account/preferences">Preferences</a></li>
+                                            <li><a href="/Error/error.html">Show all</a></li>
+                                            <li><a href="/Error/error.html" class="js-alertsMarkRead">Mark read</a></li>
+                                            <li><a href="/Error/error.html">Preferences</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -215,7 +218,7 @@
         <i aria-hidden="true"></i>
         <span class="p-navgroup-linkText">What's new</span>
         </a> -->
-                        <a href="/community/search/" class="p-navgroup-link p-navgroup-link--iconic " data-xf-click="menu" data-xf-key="/" aria-label="Search" aria-expanded="false" aria-haspopup="true" title="Search">
+                        <a href="/Error/error.html" class="p-navgroup-link p-navgroup-link--iconic " data-xf-click="menu" data-xf-key="/" aria-label="Search" aria-expanded="false" aria-haspopup="true" title="Search">
         <i aria-hidden="true"></i>
         <i class="fa-solid fa-magnifying-glass "></i>
         <!-- <span class="p-navgroup-linkText" >Search</span> -->
@@ -257,12 +260,15 @@
                     <ul class="p-sectionLinks-list">
                         <li>
                             <div class="p-navEl ">
-                                <a href="/community/whats-new/posts/" class="p-navEl-link " data-xf-key="alt+1" data-nav-id="newPosts">Open new ticket</a>
+                                <!-- <a href="/community/whats-new/posts/" class="p-navEl-link " data-xf-key="alt+1" data-nav-id="newPosts">Open new ticket</a> -->
+                                <a class="p-navEl-link " style="background: transparent; border: none; cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                                    Open new ticket
+                                </a>
                             </div>
                         </li>
                         <li>
                             <div class="p-navEl " data-has-children="true">
-                                <a href="/community/find-threads/started" class="p-navEl-link p-navEl-link--splitMenu " data-nav-id="findThreads">Your tickets</a>
+                                <a href="/Error/error.html" class="p-navEl-link p-navEl-link--splitMenu " data-nav-id="findThreads">Your tickets</a>
                                 <a data-xf-key="alt+2" data-xf-click="menu" data-menu-pos-ref="< .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true"></a>
                                 <div class="menu menu--structural" data-menu="menu" aria-hidden="true">
                                     <div class="menu-content">
@@ -275,7 +281,7 @@
                         </li>
                         <li>
                             <div class="p-navEl " data-has-children="true">
-                                <a href="/community/watched/threads" class="p-navEl-link p-navEl-link--splitMenu " data-nav-id="watched">Watched</a>
+                                <a href="/Error/error.html" class="p-navEl-link p-navEl-link--splitMenu " data-nav-id="watched">Watched</a>
                                 <a data-xf-key="alt+3" data-xf-click="menu" data-menu-pos-ref="< .p-navEl" class="p-navEl-splitTrigger" role="button" tabindex="0" aria-label="Toggle expanded" aria-expanded="false" aria-haspopup="true"></a>
                                 <div class="menu menu--structural" data-menu="menu" aria-hidden="true">
                                     <div class="menu-content">
@@ -287,12 +293,58 @@
                         </li>
                         <li>
                             <div class="p-navEl ">
-                                <a href="/community/search/?type=post" class="p-navEl-link " data-xf-key="alt+4" data-nav-id="searchForums">Search tickets</a>
+                                <a href="/Error/error.html" class="p-navEl-link " data-xf-key="alt+4" data-nav-id="searchForums">Search tickets</a>
                             </div>
                         </li>
                         <li>
                             <div class="p-navEl ">
-                                <a href="/community/forums/-/mark-read?date=1706523416" class="p-navEl-link " data-xf-click="overlay" data-xf-key="alt+5" data-nav-id="markForumsRead">Mark read</a>
+                                <!-- <a href="/Error/error.html" class="p-navEl-link " data-xf-click="overlay" data-xf-key="alt+5" data-nav-id="markForumsRead">Mark read</a> -->
+                                <a class="p-navEl-link" style="cursor: pointer;" data-toggle="modal" data-target=".bd-example-modal-lg">Mark read</a>
+
+                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content" style="border: 1px solid #756293;">
+                                        <div class="modal-header" style="background-color: #362A51;">
+                                            <h5 class="modal-title text-light" id="exampleModalLabel">Market tickets read</h5>
+                                            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body p-0" style="background-color: #483663;">
+                                            <div class="overlay-content"><form action="/community/tickets/mark-read?date=1707732801" method="post" class="block" data-xf-init="ajax-submit">
+				
+                                                <div class="block-container">
+                                                    <div class="block-body" style="border-bottom: 1px solid #756293;">
+                                                        
+                                                        <div class="formInfoRow formInfoRow--confirm">
+                                                            Are you sure you want to mark all tickets read?
+                                                        </div>
+                                                    
+                                                    </div>
+                                                    
+                                                        <dl class="formRow formSubmitRow formSubmitRow--simple">
+                                                            <dt></dt>
+                                                            <dd>
+                                                                <div class="formSubmitRow-main">
+                                                                    <!-- <div class="formSubmitRow-bar"></div> -->
+                                                                    <div class="formSubmitRow-controls" style="background-color: #483663;">
+                                                                        <button type="submit" class="button--cta button button--icon button--icon--write">
+                                                                            <span class="button-text">Mark tickets read</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </dd>
+                                                        </dl>
+                                                    
+                                                </div>
+                                            
+                                                            <input type="hidden" name="_xfToken" value="1707732804,a2a941304904cf4f55efef6a1caa7baa">
+                                                            
+                                                        </form></div>
+                                          </div>
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -308,11 +360,11 @@
                 </div>
                 <div class="p-offCanvasAccountLink">
                     <div class="offCanvasMenu-linkHolder">
-                        <a href="/community/account/" class="offCanvasMenu-link">
-<span class="avatar avatar--xxs avatar--default avatar--default--image" data-user-id="93264" title="toufiq">
+                        <a href="/community/account/account-details.html" class="offCanvasMenu-link">
+<span class="avatar avatar--xxs avatar--default avatar--default--image" data-user-id="93264" title="name">
 <span class="avatar-u93264-s"></span>
 </span>
-toufiq
+name
 </a>
                     </div>
                     <hr class="offCanvasMenu-separator" />
@@ -353,7 +405,202 @@ toufiq
                             Your tickets
                         </h1>
                         <div class="p-title-pageAction">
-                            <a href="/community/tickets/create" class="button--cta button button--icon button--icon--write" data-xf-click="overlay"><span class="button-text">Open ticket…</span></a>
+                            <!-- <a href="/community/tickets/create" class="button--cta button button--icon button--icon--write" data-xf-click="overlay"><span class="button-text">Open ticket…</span></a> -->
+                            <!-- Button trigger modal -->
+<button type="button" class="button--cta button button--icon button--icon--write" data-toggle="modal" data-target="#exampleModal">
+    Open ticket…
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="max-width: 800px;">
+      <div class="modal-content" style="border: 1px solid #6e5c8a;">
+        <div class="modal-header" style="background-color: #362A51;">
+          <h5 class="modal-title text-light" id="exampleModalLabel ">Create ticket in...</h5>
+          <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #2D2145;">
+            <div class="overlay-content " >
+                <div class="block block--treeEntryChooser" >
+                <div class="block-container ">
+                    
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink " >
+                <div class="contentRow contentRow--alignMiddle" >
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Sales Support
+                            </a>
+                        </h2>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+             
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Payments
+                            </a>
+                        </h2>
+                        
+                            <div class="contentRow-minor">
+                                For inquiries about a failed payments or payment methods.
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+      <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Subscriptions
+                            </a>
+                        </h2>
+                        
+                            <div class="contentRow-minor">
+                                If you suspect something went wrong with your subscription.
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>  
+                </div>
+            </div>
+     
+            <div class="block block--treeEntryChooser">
+                <div class="block-container">
+                    
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Software Support
+                            </a>
+                        </h2>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+          
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Client
+                            </a>
+                        </h2>
+                        
+                            <div class="contentRow-minor">
+                                For inquiries on issues related to the INTERWEBZ Client.
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+      
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle u-depth1">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Troubleshoot blue screen errors
+                            </a>
+                        </h2>
+                        
+                            <div class="contentRow-minor">
+                                For issues specifically regarding blue screen errors.<br>
+        <strong>Read the guide on blue screens on the Knowledge Base before submitting a ticket here!</strong>
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>   
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Cheats
+                            </a>
+                        </h2>
+                        
+                            <div class="contentRow-minor">
+                                Having an issue with one of our cheats? Ask here.
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        
+                </div>
+            </div>
+            
+            <div class="block block--treeEntryChooser">
+                <div class="block-container">
+                    
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Account Support
+                            </a>
+                        </h2>
+                        
+                            <div class="contentRow-minor">
+                                Inquiries related to your account.
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>       
+                </div>
+            </div>
+        
+            <div class="block block--treeEntryChooser">
+                <div class="block-container">
+                    
+            <div class="block-row block-row--clickable block-row--separated fauxBlockLink">
+                <div class="contentRow contentRow--alignMiddle">
+                    <div class="contentRow-main">
+                        <h2 class="contentRow-title">
+                            <a href="/Error/error.html" class="fauxBlockLink-blockLink">
+                                Other
+                            </a>
+                        </h2>
+                        
+                            <div class="contentRow-minor">
+                                Use this only if your question doesn't belong in any of the other categories.
+                            </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+    
+                </div>
+            </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
                         </div>
                     </div>
                 </div>
@@ -398,10 +645,10 @@ toufiq
                 <div class="p-footer-row">
                     <div class="p-footer-row-main">
                         <ul class="p-footer-linkList">
-                            <li><a href="/community/misc/contact" data-xf-click="overlay">Contact us</a></li>
-                            <li><a href="/community/help/terms/">Terms and rules</a></li>
-                            <li><a href="/community/help/privacy-policy/">Privacy policy</a></li>
-                            <li><a href="/community/help/">Help</a></li>
+                            <li><a href="/Error/error.html" data-xf-click="overlay">Contact us</a></li>
+                            <li><a href="/Error/error.html">Terms and rules</a></li>
+                            <li><a href="/Error/error.html">Privacy policy</a></li>
+                            <li><a href="/Error/error.html">Help</a></li>
                         </ul>
                     </div>
                     <div class="p-footer-row-opposite">
