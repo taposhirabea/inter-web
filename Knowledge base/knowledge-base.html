@@ -27,10 +27,13 @@
     </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
-    <script src="https://kit.fontawesome.com/436c17474f.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/436c17474f.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
 
@@ -168,94 +171,88 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="p-navgroup-link js-badge--conversations badgeContainer" data-badge="0" data-xf-click="menu" data-xf-key="," data-menu-pos-ref="< .p-navgroup" aria-label="Inbox"
-                            aria-expanded="false" aria-haspopup="true">
-<!-- <i aria-hidden="true"></i> -->
-<i class="fa-regular fa-envelope" style="color: #ebe2fa  !important;"></i>
-<span class="p-navgroup-linkText"></span>
-</a>
-                        <div class="menu menu--structural menu--medium" data-menu="menu" aria-hidden="true" data-href="/community/conversations/popup" data-nocache="true" data-load-target=".js-convMenuBody">
-                            <div class="menu-content">
-                                <h3 class="menu-header">Conversations</h3>
-                                <div class="js-convMenuBody">
-                                    <div class="menu-row">Loading…</div>
-                                </div>
-                                <div class="menu-footer menu-footer--split">
-                                    <div class="menu-footer-main">
-                                        <ul class="listInline listInline--bullet">
-                                            <li><a href="/community/conversations/">Show all</a></li>
-                                            <li><a href="/community/conversations/add">Start a new conversation</a></li>
+                 
+                        <div class="dropdown" >
+                            <button class="btn p-navgroup-link js-badge--conversations  dropdown-toggle" style="border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-regular fa-envelope icon-box " ></i>
+                            </button>
+                        
+                                    <div class="dropdown-menu dropdown-box-menu" aria-labelledby="dropdownMenuButton" style="background-color: #362A51 ; border: 1px solid #6e5c8a" >
+                        
+                                        <div class="menu-content">
+                                        <h3 class="menu-header text-light py-3" style="background-color: #362A51 ; font-weight: 600; font-size: 13px; ">Conversations</h3>
+                                        <div class="js-convMenuBody"><div class="menu-row " style="background-color: #483663; color: #A08FBD;">You have no recent conversations.</div></div>
+                                        <div class="menu-footer menu-footer--split" style="background-color: #483663 ;">
+                                        <div class="menu-footer-main" >
+                                        <ul class="listInline listInline--bullet" style="background-color: #483663;" >
+                                        <li><a href="">Show all</a></li>
+                                        <li><a href="">Start a new conversation</a></li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="p-navgroup-link p-navgroup-link--iconic js-badge--alerts badgeContainer" data-badge="0" data-xf-click="menu" data-xf-key="." data-menu-pos-ref="< .p-navgroup" aria-label="Alerts" aria-expanded="false"
-                            aria-haspopup="true">
-<i aria-hidden="true"></i>
-<i class="fa-regular fa-bell" style="color: #ebe2fa  !important;"></i>
-
-<span class="p-navgroup-linkText"></span>
-</a>
-<button type="button" class="btn btn-transparet d-md-none d-lg-none" style="color: #907bb1;">
-	<i class="fa-solid fa-bolt-lightning"></i>
-  </button>
-                        <div class="menu menu--structural menu--medium" data-menu="menu" aria-hidden="true" data-href="/community/account/alerts-popup" data-nocache="true" data-load-target=".js-alertsMenuBody">
-                            <div class="menu-content">
-                                <h3 class="menu-header">Alerts</h3>
-                                <div class="js-alertsMenuBody">
-                                    <div class="menu-row">Loading…</div>
-                                </div>
-                                <div class="menu-footer menu-footer--split">
-                                    <div class="menu-footer-main">
-                                        <ul class="listInline listInline--bullet">
-                                            <li><a href="/community/account/alerts">Show all</a></li>
-                                            <li><a href="/community/account/alerts/mark-read" class="js-alertsMarkRead">Mark read</a></li>
-                                            <li><a href="/community/account/preferences">Preferences</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                          </div>
+                        
+                                                <div class="dropdown" >
+                                                    <button class="btn p-navgroup-link js-badge--conversations  dropdown-toggle" style="border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fa-regular fa-bell icon-box"></i>
+                                                    </button>
+                                                
+                                                            <div class="dropdown-menu dropdown-box-menu" aria-labelledby="dropdownMenuButton" style="background-color: #362A51 ; border: 1px solid #6e5c8a" >
+                                                           
+                                                                <div class="menu-content">
+                                                                <h3 class="menu-header text-light py-3" style="background-color: #362A51 ; font-weight: 600; font-size: 13px; ">Alerts</h3>
+                                                                <div class="js-convMenuBody"><div class="menu-row " style="background-color: #483663; color: #A08FBD;">You have no recent alerts.</div></div>
+                                                                <div class="menu-footer menu-footer--split" style="background-color: #483663 ;">
+                                                                <div class="menu-footer-main" >
+                                                                <ul class="listInline listInline--bullet" style="background-color: #483663;" >
+                                                                    <li><a href="/community/account/alerts">Show all</a></li>
+                                                                    <li><a href="/community/account/alerts/mark-read" class="js-alertsMarkRead">Mark read</a></li>
+                                                                    <li><a href="/community/account/preferences">Preferences</a></li>
+                                                                </ul>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                  </div>
+                        
+                                            <div class="dropdown" >
+                                                <button class="btn p-navgroup-link js-badge--conversations  dropdown-toggle" style="border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-magnifying-glass icon-box"></i>
+                                                </button>
+                                            
+                                                            <div class="dropdown-menu dropdown-search-menu" aria-labelledby="dropdownMenuButton" style="background-color: #362A51 ; border: 1px solid #6e5c8a" >
+                                                    
+                                                                <form action="/community/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+                                                                <h3 class="menu-header text-light"  style="background-color: #362A51 ; font-weight: 600; font-size: 13px; ">Search</h3>
+                                                                <div class="menu-row" style="background-color: #483663;">
+                                                                <input type="text" class="input advance-btn"  name="keywords" placeholder="Search…" aria-label="Search" data-menu-autofocus="true">
+                                                                </div>
+                                                                <div class="menu-row" style="background-color: #483663;">
+                                                                <label class="iconic"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i><span class="iconic-label dropdown-text-color">Search titles only
+                                                                <span tabindex="0" role="button" data-xf-init="tooltip" data-trigger="hover focus click" data-original-title="Tags will also be searched" id="js-XFUniqueId1">
+                                                                <i class="fa--xf far fa-question-circle u-muted u-smaller" aria-hidden="true"></i>
+                                                                </span></span></label>
+                                                                </div>
+                                                                <div class="menu-row" style="background-color: #483663;">
+                                                                <div class="inputGroup">
+                                                                <span class="inputGroup-text dropdown-text-color" id="ctrl_search_menu_by_member">By:</span>
+                                                                <input type="text" class="input advance-btn"  name="c[users]" data-xf-init="auto-complete" placeholder="Member" aria-labelledby="ctrl_search_menu_by_member" autocomplete="off">
+                                                                </div>
+                                                                </div>
+                                                                <div class="menu-footer" style="background-color: #483663;">
+                                                                <span class="menu-footer-controls">
+                                                                <button type="submit" class=" search--newIndicator" ><i class="fa-solid fa-magnifying-glass pe-1"></i>Search</button>
+                                                                <a href="/community/search/" class="button dropdown-text-color advance-btn ad-btn">Advanced search…</a>
+                                                                </span>
+                                                                </div>
+                                                                <input type="hidden" name="_xfToken" value="1707830771,0918e9bf1d6c77b44d7110cb6562234f">
+                                                                </form>
+                                                                </div>
+                                              </div>
                     </div>
-                    <div class="p-navgroup p-discovery">
-                        <!-- <a href="/community/whats-new/" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" aria-label="What&#039;s new" title="What&#039;s new">
-<i aria-hidden="true"></i>
-<span class="p-navgroup-linkText">What's new</span>
-</a> -->
-                        <a href="#" class="p-navgroup-link p-navgroup-link--iconic " data-xf-click="menu" data-xf-key="/" aria-label="Search" aria-expanded="false" aria-haspopup="true" title="Search">
-<i aria-hidden="true"></i>
-<i class="fa-solid fa-magnifying-glass"></i>
-<!-- <span class="p-navgroup-linkText" >Search</span> -->
-</a>
-                        <div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
-                            <form action="/community/search/search" method="post" class="menu-content" data-xf-init="quick-search">
-                                <h3 class="menu-header">Search</h3>
-                                <div class="menu-row">
-                                    <input type="text" class="input" name="keywords" placeholder="Search…" aria-label="Search" data-menu-autofocus="true" />
-                                </div>
-                                <div class="menu-row">
-                                    <label class="iconic"><input type="checkbox" name="c[title_only]" value="1" /><i aria-hidden="true"></i><span class="iconic-label">Search titles only
-<span tabindex="0" role="button" data-xf-init="tooltip" data-trigger="hover focus click" title="Tags will also be searched">
-<i class="fa--xf far fa-question-circle u-muted u-smaller" aria-hidden="true"></i>
-</span></span></label>
-                                </div>
-                                <div class="menu-row">
-                                    <div class="inputGroup">
-                                        <span class="inputGroup-text" id="ctrl_search_menu_by_member">By:</span>
-                                        <input type="text" class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Member" aria-labelledby="ctrl_search_menu_by_member" />
-                                    </div>
-                                </div>
-                                <div class="menu-footer">
-                                    <span class="menu-footer-controls">
-<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Search</span></button>
-                                    <a href="/community/search/" class="button"><span class="button-text">Advanced search…</span></a>
-                                    </span>
-                                </div>
-                                <input type="hidden" name="_xfToken" value="1706274979,b8640de3b33ff33c27848e4260499c28" />
-                            </form>
-                        </div>
-                    </div>
+               
                 </div>
             </div>
         </nav>
