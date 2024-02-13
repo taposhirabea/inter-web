@@ -17444,7 +17444,7 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
     color:#141414;
     background:#fefefe;
     border-radius:3px;
-    border-top:3px solid #47a7eb
+    /* border-top:3px solid #47a7eb */
 }
 .menu--structural.menu--left .menu-content{
     border-top-left-radius:0
@@ -17473,8 +17473,8 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
     font-size:17px;
     color:#2577b1;
     background:#edf6fd;
-    border-bottom:1px solid #dfdfdf;
-    background:linear-gradient(0deg, #edf6fd, #f6fafe)
+    border-bottom:1px solid #6e5c8a;
+    /* background:linear-gradient(0deg, #edf6fd, #f6fafe) */
 }
 .menu-header:before,.menu-header:after{
     content:" ";
@@ -17643,8 +17643,8 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
     font-size:12px;
     color:#505050;
     background:#f5f5f5;
-    border-top:1px solid #dfdfdf;
-    background:linear-gradient(180deg, #f5f5f5, #fafafa)
+    border-top:1px solid #6e5c8a;
+    /* background:linear-gradient(180deg, #f5f5f5, #fafafa) */
 }
 .menu-footer:before,.menu-footer:after{
     content:" ";
@@ -22769,4 +22769,62 @@ padding: 24px;
 }
 .js-newsFeedTarget .block-row {
     padding: 12px 16px;
+}
+.dropdown-box-menu {
+    /* height: auto; */
+    width: 450px !important;
+    /* max-width: calc(90%) !important; */
+    right: -3rem !important;
+    padding: 0 !important;
+}
+@media screen and (max-width: 490px) {
+    .dropdown-box-menu
+     {
+        width: 250px !important;
+    }
+    .dropdown-search-menu{
+        width: 250px !important;
+    }
+    
+}
+
+
+.dropdown-search-menu {
+    padding: 0 !important;
+    width: 350px;
+}
+.icon-box {
+    color: #a08fbd ;
+}
+.icon-box:hover {
+    color: lightcyan;
+}
+.dropdown-text-color {
+    color: #a08fbd;
+}
+.search--newIndicator {
+    font-size: 12px;
+    color: #e8e0f5;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #d16a47 0%, #d1475e 100%);
+    box-shadow: 0px 0px 5px rgba(209,106,71,0.5);
+    margin-left: 4px;
+    border: none;
+}
+::placeholder {
+    color: #695E8F !important;
+    opacity: 1;
+  }
+.advance-btn{
+    background-color: #554270 !important;
+    border: 1px solid #6e5c8a !important;
+}
+.ad-btn:hover {
+    color: #E8D9D7 !important;
+}
+.btn {
+    --bs-btn-color: #a08fbd !important;
 }
