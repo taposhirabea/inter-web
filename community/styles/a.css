@@ -21529,9 +21529,9 @@ a.reaction:hover .reaction-text,a.reaction:focus .reaction-text{
 .p-nav-list .p-navEl-link{
     padding:0 15px
 }
-.p-nav-list .p-navEl-link.p-navEl-link--splitMenu{
+/* .p-nav-list .p-navEl-link.p-navEl-link--splitMenu{
     padding-right:1.875px
-}
+} */
 .p-nav-list .p-navEl-link.p-navEl-link--menuTrigger{
     padding-right:5px
 }
