@@ -437,15 +437,9 @@ Screenshot Cleaning
 <div class="mt-5 space-y-4 lg:space-y-0 lg:space-x-4 lg:mt-8 lg:flex">
 <div>
 <span class="flex rounded-md shadow-sm ">
-<button type="button" class="inline-flex items-center justify-center border font-medium focus:outline-none transition duration-150 ease-in-out px-8 py-3 text-base leading-6 rounded-md md:text-lg text-neutral-100 bg-gradient-to-r from-brand-orange to-brand-red border-transparent opacity-75 hover:opacity-100 focus:outline-none focus:ring ring-brand-orange ring-opacity-50 disabled:opacity-75 disabled:cursor-not-allowed w-full" size="xxl" x-data="{
-                            scrollTo() {
-                                el = document.querySelector('#pricing');
-                                el.scrollIntoView({
-                                    behavior: 'smooth'
-                                });
-                            }
-                        }" @click.prevent="scrollTo" wire:loading.attr="disabled">
-Purchase Now*
+
+<button type="button" onclick="scrollToSection()" class="inline-flex items-center justify-center border font-medium focus:outline-none transition duration-150 ease-in-out px-8 py-3 text-base leading-6 rounded-md md:text-lg text-neutral-100 bg-gradient-to-r from-brand-orange to-brand-red border-transparent opacity-75 hover:opacity-100 focus:outline-none focus:ring ring-brand-orange ring-opacity-50 disabled:opacity-75 disabled:cursor-not-allowed w-full">
+    Purchase Now*
 </button>
 </span>
 </div>
@@ -454,6 +448,7 @@ Purchase Now*
 <a href="/Forums/Announcement/Single/single.html" class="inline-flex items-center justify-center border font-medium focus:outline-none transition duration-150 ease-in-out disabled:opacity-75 disabled:cursor-not-allowed px-8 py-3 text-base leading-6 rounded-md md:text-lg border border-neutral-350 text-neutral-200 bg-neutral-400 hover:bg-neutral-350 hover:text-neutral-100 focus:bg-neutral-350 focus:text-neutral-100 focus:ring ring-neutral-300 ring-opacity-75 active:text-neutral-100 active:bg-neutral-300 transition disabled:pointer-events-none disabled:opacity-75 disabled:cursor-not-allowed w-full" size="xxl" target="__blank" wire:loading.attr="disabled">
 Learn More...
 </a>
+
 </span>
 </div>
 </div>
@@ -894,5 +889,15 @@ Contact Us
 <script src="/js/landing.js?id=97a1a4b0ff47cbeb992e" defer type="9cffbd150d1ffc71c98e4959-text/javascript"></script> -->
 <script src="https://js.stripe.com/v3/" type="9cffbd150d1ffc71c98e4959-text/javascript"></script>
 <!-- <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="9cffbd150d1ffc71c98e4959-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"851be4bf2cb27c3a","version":"2024.2.0","token":"6804e66e506340e3a1643802f2023a2c"}' crossorigin="anonymous"></script> -->
+<script>
+    function scrollToSection() {
+        // Get the target section element
+        var pricing = document.getElementById('pricing');
+
+        // Scroll to the target section
+        pricing.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
 </html>
