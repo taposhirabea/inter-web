@@ -17455,7 +17455,7 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
     color:#141414;
     background:#fefefe;
     border-radius:3px;
-    border-top:3px solid #47a7eb
+    /* border-top:3px solid #47a7eb */
 }
 .menu--structural.menu--left .menu-content{
     border-top-left-radius:0
@@ -17484,8 +17484,8 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
     font-size:17px;
     color:#2577b1;
     background:#edf6fd;
-    border-bottom:1px solid #dfdfdf;
-    background:linear-gradient(0deg, #edf6fd, #f6fafe)
+    border-bottom:1px solid #6e5c8a;
+    /* background:linear-gradient(0deg, #edf6fd, #f6fafe) */
 }
 .menu-header:before,.menu-header:after{
     content:" ";
@@ -17654,8 +17654,8 @@ select.input[size],.input.input--select[size],select.input[multiple],.input.inpu
     font-size:12px;
     color:#505050;
     background:#f5f5f5;
-    border-top:1px solid #dfdfdf;
-    background:linear-gradient(180deg, #f5f5f5, #fafafa)
+    border-top:1px solid #6e5c8a;
+    /* background:linear-gradient(180deg, #f5f5f5, #fafafa) */
 }
 .menu-footer:before,.menu-footer:after{
     content:" ";
